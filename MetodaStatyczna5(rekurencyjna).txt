@@ -17,7 +17,7 @@ namespace Zad_5._9
         static void Main(string[] args)
         {
             int n;
-            Console.WriteLine("Podaj ktory ciag ciagu Fibonaciego chcesz obliczyc: ");
+            Console.WriteLine("Podaj ktory wyraz ciagu Fibonaciego chcesz obliczyc: ");
             n = int.Parse(Console.ReadLine());
             Console.WriteLine(n + "-ty wyraz ciagu to " + ciagF(n));
 
