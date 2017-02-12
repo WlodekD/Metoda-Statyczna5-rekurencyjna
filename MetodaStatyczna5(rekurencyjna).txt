@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zad_5._9
+{
+    class Program
+    {
+        static int ciagF(int n)
+        {
+            if (n == 1 || n == 2) return 1;
+            else return ciagF(n - 1) + ciagF(n - 2);
+        }
+
+        static void Main(string[] args)
+        {
+            int n;
+            Console.WriteLine("Podaj który ci¹g ci¹gu Fibonaciego chcesz obliczyæ: ");
+            n = int.Parse(Console.ReadLine());
+            Console.WriteLine(n + "-ty wyraz ci¹gu to " + ciagF(n));
+
+            Console.ReadKey();
+        }
+    }
+}
